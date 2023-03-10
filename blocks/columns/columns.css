@@ -1,11 +1,16 @@
 .columns > div {
     display: flex;
     flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 16px;
 }
 
 .columns img {
     width: 100%;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
 }
+
 
 @media (min-width: 900px) {
     .columns > div {
@@ -16,7 +21,8 @@
 
     .columns > div > div {
         flex: 1;
-        margin-left: 32px;
+        /* margin-left: 32px; */
+        margin-right: 24px;
     }
 
     .columns > div > div:first-of-type {
