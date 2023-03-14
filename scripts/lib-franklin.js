@@ -525,6 +525,18 @@ export async function waitForLCP(lcpBlocks) {
 }
 
 /**
+ * Loads a block named 'header' into header
+ * @param {Element} abheader header element
+ * @returns {Promise}
+ */
+export function loadAbHeader(abheader) {
+  const abheaderBlock = buildBlock('abheader', '');
+  abheader.append(abheaderBlock);
+  decorateBlock(abheaderBlock);
+  return loadBlock(abheaderBlock);
+}
+
+/**
  * loads a block named 'header' into header
  */
 export function loadHeader(header) {
