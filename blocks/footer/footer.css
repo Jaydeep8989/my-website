@@ -22,6 +22,7 @@ footer .footer p {
 }
 footer .columns >div >div:first-child {
     border-right: 1px solid #ffffff;
+    height: 300px;
 }
 .footer .columns a {
     color: #ffffff;
