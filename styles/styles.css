@@ -43,10 +43,9 @@
 }
 
 body {
-  font-size: var(--body-font-size-m);
   margin: 0;
   font-family: var(--body-font-family);
-  line-height: 1.6;
+  line-height: 24px;
   color: var(--text-color);
   background-color: var(--background-color);
   display: none;
@@ -63,22 +62,45 @@ header {
 h1, h2, h3,
 h4, h5, h6 {
   font-family: var(--heading-font-family);
-  font-weight: 600;
   line-height: 1.25;
-  margin-top: 70px;
-  margin-bottom: .5em;
-  color: var(--link-color);
+  margin-bottom: 0px;
   scroll-margin: calc(var(--nav-height) + 1em);
 }
 
-h1 { font-size: var(--heading-font-size-xxl) }
-h2 { font-size: var(--heading-font-size-xl) }
-h3 { font-size: var(--heading-font-size-l) }
-h4 { font-size: var(--heading-font-size-m) }
-h5 { font-size: var(--heading-font-size-s) }
-h6 { font-size: var(--heading-font-size-xs) }
+h1 { 
+  font-size: var(--heading-font-size-xxl) 
+}
+h2 { 
+  font-size: 48px;
+  color: #00218A;
+  font-weight: 300;
+  padding-top: 48px;
+  margin-bottom: 32px;
+}
+h3 { 
+  font-size: var(--heading-font-size-l) 
+}
+h4 { 
+  font-size: 24px;
+  color: #0047BB;
+  font-weight: 400;
+}
+h5 { 
+  font-size: 18px;
+  color: #0047BB;
+  font-weight: 700;
+}
+h6 { 
+  font-size: var(--heading-font-size-xs) 
+}
 
-p, dl, ol, ul, pre, blockquote {
+p{
+  font-size: 16px;
+  font-weight: 400;
+  color: #383838;
+}
+
+dl, pre, blockquote {
   margin-top: 1em;
   margin-bottom: 1em;
 }
@@ -165,7 +187,7 @@ main input:hover {
 }
 
 main .section {
-  padding: 64px 16px;
+  padding: 40px 16px;
 }
 
 main pre {
@@ -208,7 +230,7 @@ main img {
 
 @media (min-width: 600px) {
   main .section {
-    padding: 64px 32px;
+    padding: 40px 32px;
   }  
 }
 
@@ -238,6 +260,15 @@ main .section.highlight {
   background-color: var(--highlight-background-color);
 }
 
+main .section:nth-child(3) {
+  display: none;  
+}
+
+/*Hide some sections*/
+.section.highlight{
+  display: none;
+}
+
 /* Single image */
 p picture img{
   border-radius: 16px;
@@ -251,4 +282,13 @@ p picture img{
 .cards2-wrapper .cards2{
   margin-bottom: 24px;
   margin-top: 24px;
+}
+/* Reference*/
+.default-content-wrapper p {
+  font-size: 12px;
+  line-height: 16px;
+}
+.default-content-wrapper h5, .default-content-wrapper ol li{
+  color: #383838;
+  font-size: 12px;
 }
