@@ -32,6 +32,17 @@
     aspect-ratio: 4 / 3;
     object-fit: cover;
 }
+
 .cards2 .cards-two li .cards-card-body ul{
     list-style-type: disc;
+}
+
+.cards2 ul li {
+    position: relative;
+}
+
+.cards2 .cards-card-body .button-container a{
+    position: absolute;
+    bottom: 8px;
+    width: 90%;
 }
