@@ -45,3 +45,8 @@
     bottom: 8px;
     width: 90%;
 }
+
+/*Button margin*/
+.cards p.button-container{
+    margin-top: 40px;
+}
